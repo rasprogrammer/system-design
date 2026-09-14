@@ -17,9 +17,16 @@ class DocumentEditor {
     renderDocument() {
         return this.elements.join('\n');
     }
+
+    saveDocument() {
+        // Implementation for saving the document
+        console.log("Document saved.");
+    }
 }
 
 const doc = new DocumentEditor();
 doc.addText("Hello, world!");
 doc.addImage("image.png");
 console.log(doc.renderDocument());
+
+export {};
